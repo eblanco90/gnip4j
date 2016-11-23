@@ -13,3 +13,6 @@ velocity.log
 *.iws
 .idea
 tmp
+/build-eclipse/
+.gradle/
+build/
