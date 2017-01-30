@@ -63,6 +63,11 @@ public final class PowerTrackV2UriStrategy implements UriStrategy {
         }
         this.publisher = publisher;
     }
+    
+    @Override
+    public URI createStreamUri(final String account, final String streamName) {
+        return createStreamUri(account, streamName, 5); 
+    }
 
     @Override
     public URI createStreamUri(final String account, final String streamName, final Integer backFillMinutes) {
